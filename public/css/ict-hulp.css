@@ -1,0 +1,575 @@
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+.serrat-regular {
+    font-family: Montserrat-Regular;
+}
+
+.serrat-light {
+    font-family: Montserrat-Light;
+}
+
+.serrat-medium {
+    font-family: Montserrat-Medium;
+}
+
+.serrat-semibold {
+    font-family: Montserrat-SemiBold;
+}
+
+/* ALGEMNEEN*/
+.first-container {
+    margin-top: 70px !important;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.mb-3rem {
+    margin-bottom: 0.3rem;
+}
+
+.fa-font-size {
+    font-size: 26px;
+}
+
+.fa-font-24 {
+    font-size: 24px;
+    color: black;
+}
+
+
+
+.register-container {
+    margin-top: 20px !important;
+}
+
+.normal-container {
+    margin-top: 25px !important;
+}
+
+.btn-theme {
+    background-color: #44c8ba !important;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-user-add {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+}
+
+.card-block {
+    padding: 1.25rem;
+}
+
+.name-tag {
+    color: #44c8ba !important;
+    font-weight: bold;
+}
+
+.name-tag:hover {
+    text-decoration: none;
+    color: #444444 !important;
+}
+
+.title {
+    color: black !important;
+}
+
+.title:hover {
+    text-decoration: none;
+    color: #555555 !important;
+}
+
+#showEffect {
+    display: none;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.btn-notliked {
+    background-color: transparent;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+.btn-liked {
+    background-color: transparent;
+    color: #44c8ba;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-both {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.card-custom {
+    border: none;
+    border-bottom: 1px solid #f1f1f0 !important;
+    cursor: pointer;
+}
+
+.btn-destroy {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.btn-edit {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.card-blue {
+    background-color: #21A6E2;
+    border-radius: 0;
+    border: 0;
+    color: white;
+}
+
+.card-footer-blue {
+    background-color: #2194CA;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #a1dcf6;
+}
+
+.card-footer-blue > a {
+    color: #a1dcf6;
+}
+
+.card-footer-blue > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.card-green {
+    background-color: #28B779;
+    border-radius: 0;
+    border: 0;
+    color: white;
+}
+
+.card-footer-green {
+    background-color: #10A062;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #88cdaf;
+}
+
+.card-footer-green > a {
+    color: #88cdaf;
+}
+
+.card-footer-green > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.card-purple {
+    background-color: #852C9A;
+    border-radius: 0;
+    border: 0;
+    color: white;
+}
+
+.card-footer-purple {
+    background-color: #751E89;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #b46ec5;
+}
+
+.card-footer-purple > a {
+    color: #b46ec5;
+}
+
+.card-footer-purple > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.card-yellow {
+    background-color: #FFB849;
+    border-radius: 0;
+    border: 0;
+    color: white;
+}
+
+.card-footer-yellow {
+    background-color: #eba025;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+}
+
+.card-footer-yellow > a {
+    color: #ffe0ad;
+}
+
+.card-footer-yellow > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.fnt-46 {
+    font-size: 46px;
+}
+/*EINDE ALGEMEEN*/
+
+/* NAVBAR STYLES */
+
+.navbar {
+    border-top: 3px solid #44C8BA;
+}
+
+.border-none {
+    border: none;
+}
+
+.navbar > ul > li > a {
+    color: black !important;
+}
+
+.navbar-panel .navbar-nav .nav-link {
+    color: white;
+}
+
+
+
+.nav-register-btn {
+    background-color: #44c8ba;
+    color: #ffffff !important;
+    border-radius: 3px;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+    color: #44c8ba;
+}
+
+.btn-hover:hover {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn-search {
+    background-color: #44c8ba;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.nav-search {
+    background-color: #e3ebef;
+    color: #747F8B;
+}
+
+.fa-skype {
+    color: #44c8ba;
+}
+
+.fa-skype:hover {
+    color: #00B0E8;
+}
+
+.form-inline {
+    width: 64%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-inline #search {
+    width: 55%;
+}
+
+.search-input {
+    margin-right: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: white;
+    padding-right: 0;
+    padding-left: 0;
+    width: 120px;
+}
+
+.sidebar a {
+    color: #666;
+}
+
+.sidebar a:hover {
+    color: #333333;
+    border-radius: 0;
+}
+
+.custom-active {
+    color: #333333 !important;
+    background-color: #f9f2f4;
+    border-left: 1px solid black;
+}
+
+.banner-background {
+    background-image: url(http://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+    background-size: cover;
+    width: 100%;
+    margin-top: -12px;
+}
+
+.nav-pills .nav-item+.nav-item {
+    margin: 0;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.fa-lg {
+    display: block;
+    margin: 6px auto;
+}
+
+
+
+/* EINDE NAVBAR STYLESS*/
+
+/*LOGIN PAGINA*/
+
+.login-card {
+    display: none;
+    border-radius: 7px;
+}
+
+.login-card form i.fa {
+    position: absolute;
+    top: 7px;
+    left: 32px;
+    color: #44c8ba;
+    font-size: 22px;
+    z-index: 9999;
+}
+
+.fw-3 {
+    font-weight: 300;
+}
+
+.form-control-login {
+    position: relative;
+    padding-left: 45px !important;
+
+}
+/*EINDE LOGIN PAGINA*/
+
+/*REGISTER PAGINA*/
+.register-card {
+    display: none;
+    border-radius: 7px;
+}
+
+.btn-popover {
+    padding: 0;
+    float: right;
+    background-color: transparent;
+}
+
+.btn-popover .fa {
+    font-size: 20px;
+}
+/*EINDE REGISTER PAGINA*/
+
+/* ALLE SCHADUWEN */
+
+.z-depth-half {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 3px 0 rgba(0,0,0,0.12), 0 3px 1px -3px rgba(0,0,0,0.1);
+}
+
+.z-depth-1 {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.z-depth-1-half {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-2 {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-3 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-4, .modal {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-5 {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* EINDE ALLE SCHADUWEN*/
+
+/*TINYMCE STYLES*/
+#mytextarea {
+
+}
+
+#mceu_31 {
+    display: none;
+}
+
+#mceu_32 {
+    display: none !important;
+}
+
+#mceu_12 {
+    border-top: none;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+#mceu_14 {
+    border: none;
+}
+
+#mceu_14-body {
+    background: #44c8ba;
+}
+
+#mceu_14-body span {
+    color: white;
+}
+
+#mceu_14-body i.mce-caret {
+    border-top-color: white;
+}
+
+#mceu_15:hover {
+    background-color: #44c8ba;
+    color: #f9f9f9;
+    border-color: #44c8bd;
+}
+
+#mceu_16:hover {
+    background-color: #44c8ba;
+    color: #f9f9f9;
+    border-color: #44c8bd;
+}
+
+#mceu_17:hover {
+    background-color: #44c8ba;
+    color: #f9f9f9;
+    border-color: #44c8bd;
+}
+
+#mceu_18:hover {
+    background-color: #44c8ba;
+    color: #f9f9f9;
+    border-color: #44c8bd;
+}
+
+#mceu_19:hover {
+    background-color: #44c8ba;
+    color: #f9f9f9;
+    border-color: #44c8bd;
+}
+
+#mceu_15-open {
+    background-color: #44c8ba;
+}
+
+#mceu_16-open {
+    background-color: #44c8ba;
+}
+
+#mceu_17-open {
+    background-color: #44c8ba;
+}
+
+#mceu_18-open {
+    background-color: #44c8ba;
+}
+
+#mceu_19-open {
+    background-color: #44c8ba;
+}
+
+/*TINYMCE STYLES EINDE*/
+
+/*PROFIEL STYLES*/
+.banner-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.profile-img {
+    position: absolute;
+    left: 440px;
+    top: 330px;
+    border: 3px solid white;
+
+}
+/*EINDE PROFIELSTYLES*/
+
+/*FLASH MESSAGE*/
+
+.flash-succes {
+    font-size: 42px;
+    position: relative;
+    margin-top: 2px;
+    left: -10px;
+    color: limegreen;
+}
+
+/*EINDE FLASH MESSAGE*/

@@ -67,7 +67,7 @@
 }
 
 .btn-theme {
-    background-color: #44c8ba !important;
+    background-color: #283593 !important;
     color: white;
     border-radius: 3px;
     cursor: pointer;
@@ -85,7 +85,7 @@
 }
 
 .name-tag {
-    color: #44c8ba !important;
+    color: #283593 !important;
     font-weight: bold;
 }
 
@@ -125,7 +125,7 @@
 
 .btn-liked {
     background-color: transparent;
-    color: #44c8ba;
+    color: #283593;
     border: none;
     outline: none;
     cursor: pointer;
@@ -160,7 +160,7 @@
 
 .card-blue {
     background-color: #21A6E2;
-    border-radius: 0;
+    border-radius: 7px;
     border: 0;
     color: white;
 }
@@ -169,6 +169,8 @@
     background-color: #2194CA;
     padding-top: 2px;
     padding-bottom: 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     color: #a1dcf6;
 }
 
@@ -183,7 +185,7 @@
 
 .card-green {
     background-color: #28B779;
-    border-radius: 0;
+    border-radius: 5px;
     border: 0;
     color: white;
 }
@@ -193,6 +195,8 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: #88cdaf;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .card-footer-green > a {
@@ -206,7 +210,7 @@
 
 .card-purple {
     background-color: #852C9A;
-    border-radius: 0;
+    border-radius: 5px;
     border: 0;
     color: white;
 }
@@ -216,6 +220,8 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: #b46ec5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .card-footer-purple > a {
@@ -229,7 +235,7 @@
 
 .card-yellow {
     background-color: #FFB849;
-    border-radius: 0;
+    border-radius: 5px;
     border: 0;
     color: white;
 }
@@ -239,6 +245,8 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .card-footer-yellow > a {
@@ -258,7 +266,7 @@
 /* NAVBAR STYLES */
 
 .navbar {
-    border-top: 3px solid #44C8BA;
+    border-top: 3px solid #283593;
 }
 
 .border-none {
@@ -276,14 +284,14 @@
 
 
 .nav-register-btn {
-    background-color: #44c8ba;
+    background-color: #283593;
     color: #ffffff !important;
     border-radius: 3px;
 }
 
 .navbar .navbar-toggler {
     border: none;
-    color: #44c8ba;
+    color: #283593;
 }
 
 .btn-hover:hover {
@@ -292,7 +300,7 @@
 }
 
 .btn-search {
-    background-color: #44c8ba;
+    background-color: #283593;
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -303,7 +311,7 @@
 }
 
 .fa-skype {
-    color: #44c8ba;
+    color: #283593;
 }
 
 .fa-skype:hover {
@@ -389,7 +397,7 @@
     position: absolute;
     top: 7px;
     left: 32px;
-    color: #44c8ba;
+    color: #283593;
     font-size: 22px;
     z-index: 9999;
 }

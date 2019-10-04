@@ -26,7 +26,7 @@
 
 
             <a class="navbar-brand" href="{{ route('home')  }}">
-                <i class="fa fa-skype"></i>
+                <i class="fa fa-laptop"></i>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,7 +124,7 @@
                     <li class="nav-item dropdown">
 
                         <a class="nav-link dropdown-toggle navbar-profiletext" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="#" class="rounded-circle navbar-profileimage" style="">{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}
+                            {{ Auth::user()->firstname }} {{ Auth::user()->lastname }}
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-center z-depth-1" aria-labelledby="navbarDropdownMenuLink3" style="width: 250px; border-radius: 7px; padding-bottom: 0; top: 70px;">
@@ -132,7 +132,7 @@
                             <div class="dropdown-item dropdown-title">
                                 <div class="notification-image-wrapper">
                                     <div class="notification-image-profile">
-                                        <img src="#" class="rounded-circle" width="42">
+
                                     </div>
                                 </div>
 
@@ -143,7 +143,7 @@
 
                             </div>
                             <a class="dropdown-item dropdown-item-style2" href="{{ route('showProfile', Auth()->user()) }}"><i class="fa fa-user-o" aria-hidden="true"></i> Profiel</a>
-                            <a class="dropdown-item dropdown-item-style2" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Berichten <span class="badge badge-dark float-right">5</span></a>
+                            <a class="dropdown-item dropdown-item-style2" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Berichten</a>
                             <a class="dropdown-item dropdown-item-style2" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Instellingen</a>
                             <a class="dropdown-item dropdown-item-style2" href="{{ route('adminpanel') }}"><i class="fa fa-th-large" aria-hidden="true"></i> Admin panel</a>
                             <a class="dropdown-item dropdown-item-style2" href="{{ route('logout') }}"><i class="fa fa-power-off" aria-hidden="true"></i> Uitloggen</a>

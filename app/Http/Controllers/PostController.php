@@ -132,8 +132,10 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param $channelId
+     * @param Post $post
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy($channelId, Post $post)
     {

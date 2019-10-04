@@ -57,8 +57,13 @@
                                 <td>{{ $user->lastname }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>{{ $user->username }}</td>
-                                <td>{{ $user->created_at->toFormattedDateString() }}</td>
-                                <td>{{ $user->updated_at->toFormattedDateString() }}</td>
+                                @if($user->created_at == null || $user->updated_at == null)
+                                    <td>No date</td>
+                                    <td>No date</td>
+                                @else
+                                    <td>{{ $user->created_at->toFormattedDateString() }}</td>
+                                    <td>{{ $user->updated_at->toFormattedDateString() }}</td>
+                                @endif
                                 <td class="text-center">
                                     <a href="{{ route('deleteUser', ['id' => $user->id]) }}" class="mr-3"
                                         onclick="event.preventDefault(); document.getElementById('delete-form{{ $user->id }}').submit();">

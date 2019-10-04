@@ -46,10 +46,11 @@ Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
     Route::get('/adminpanel', 'AdminController@index')->name('adminpanel');
 
     Route::get('/adminpanel/berichten', 'AdminController@showBerichten')->name('showBerichten');
+
     Route::get('/adminpanel/berichten/edit/{post}', 'AdminController@editPost')->name('editPost');
     Route::patch('/adminpanel/berichten/update/{post}', 'AdminController@updatePost')->name('updatePost');
     Route::delete('/adminpanel/berichten/delete/{post}', 'AdminController@deletePost')->name('deletePost');
-    Route::post('/adminpanel/berichten/kanaal/maken', 'AdminController@makeChannel')->name('makeChannel');
+
 
     Route::get('/adminpanel/gebruikers', 'AdminController@showGebruikers')->name('showGebruikers');
     Route::post('/adminpanel/gebruikers/maken', 'AdminController@makeUser')->name('makeUser');
@@ -59,10 +60,15 @@ Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
 
     Route::get('/adminpanel/reacties', 'AdminController@showReplies')->name('showReplies');
 
-
+    Route::post('/adminpanel/berichten/kanaal/maken', 'AdminController@makeChannel')->name('makeChannel');
     Route::get('/adminpanel/kanalen', 'AdminController@showChannels')->name('showChannels');
     Route::delete('/adminpanel/kanalen/{channel}/delete', 'AdminController@deleteChannel')->name('deleteChannel');
     Route::patch('/adminpanel/kanalen/{channel}/edit', 'AdminController@editChannel')->name('editChannel');
+
+
+
+
+    Route::get('/adminpanel/instellingen', 'AdminController@showSettings')->name('showSettings');
 
 });
 

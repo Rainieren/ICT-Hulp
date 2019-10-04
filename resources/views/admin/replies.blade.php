@@ -31,6 +31,11 @@
                 <option>Van oud naar nieuw</option>
             </select>
         </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary float-right" data-toggle="modal" data-target="#replyAanmaken">
+                Reactie toevoegen <i class="fa fa-plus"></i>
+            </button>
+        </div>
     </div>
 
     <div class="row">
@@ -53,7 +58,7 @@
                             <tr>
                                 <th scope="row">{{ $reply->id }}</th>
                                 <td>{{ $reply->user->username }}</td>
-                                <td></td>
+                                <td>{{ $reply->post->title }}</td>
                                 <td>{!! str_limit($reply->text, $limit = 50, $end = '...') !!}</td>
                                 <td>{{ $reply->created_at->toFormattedDateString() }}</td>
                                 <td class="text-center">
@@ -74,6 +79,49 @@
     </div>
 
     @endif
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="modal fade" id="replyAanmaken" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Gebruiker aanmaken</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 30px;">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form method="POST" action="{{ route('makeUser') }}">
+                            {{ csrf_field() }}
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="Datum">Titels van berichten</label>
+                                            <select class="form-control" id="Datum">
+                                                <option selected>Kies een</option>
+                                                @foreach($posts as $post)
+                                                <option>{{ $post->title }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-hover float-right">Gebruiker aanmaken</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 @endsection

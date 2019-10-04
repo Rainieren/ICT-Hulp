@@ -34,6 +34,8 @@
             <div class="col-md-3">
                 @if(Auth::guest())
 
+                @elseif(Auth::user()->confirmed == 0)
+                    <button class="btn btn-theme btn-hover mb-4" style="width: 100%; display: none;" data-toggle="modal" data-target="#berichtAanmaken">Bericht aanmaken</button>
                 @else
                     <button class="btn btn-theme btn-hover mb-4" style="width: 100%" data-toggle="modal" data-target="#berichtAanmaken">Bericht aanmaken</button>
                 @endif
@@ -44,7 +46,7 @@
                         <a href=""><p class="m-0">Dit is even gauw een titel</p></a>
                         <small class="text-muted">Dit is gewoon een test voor de vraag want dat is hoe het werkt...</small>
                         <br>
-                        <small>2 dagen geleden door <a href=""><span style="color: #44c8ba; font-weight: bold">Rainier laan</span></a></small>
+                        <small>2 dagen geleden door <a href=""><span class="name-tag" style="font-weight: bold">Rainier laan</span></a></small>
                     </div>
                 </div>
             </div>

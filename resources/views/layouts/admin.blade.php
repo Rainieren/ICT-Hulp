@@ -115,7 +115,7 @@
                             <i class="fa fa-inbox fa-lg"></i><span>Inbox</span></a>
                     </li>
                     <li class="nav-item mb-3rem">
-                        <a class="nav-link text-center" href="">
+                        <a class="nav-link text-center {{ Route::currentRouteNamed('showSettings') ? 'custom-active' : '' }}" href="{{ route('showSettings') }}">
                             <i class="fa fa-cog fa-lg"></i><span>Instellingen</span></a>
                     </li>
                     <li class="nav-item mb-3rem">

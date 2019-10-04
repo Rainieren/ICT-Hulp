@@ -31,11 +31,23 @@
                                     <button type="submit" class="btn btn-link p-0">Verwijder post</button>
                                 </form>
                             </div>
-                            @endif
+
+                        @endif
 
                     </div>
 
+                    @if(Auth::guest())
+
+                        <p class="text-center">U moet <a href="{{ route('login') }}">inloggen</a> om mee te doen met deze discussie</p>
+
+                    @elseif(Auth::user()->confirmed == 0)
+
+                        <p class="text-center">U moet uw account actieveren om mee te kunnen doen met deze discussie</p>
+
+                    @else
                     <replies :data="{{ $post->replies }}" @removed="repliesCount--"></replies>
+
+                    @endif
 
                     {{--{{ $replies->links() }}--}}
 

@@ -79,7 +79,7 @@
                                             {{ method_field('DELETE') }}
                                         </form>
                                     </a>
-                                    <a href="">
+                                    <a href="{{ route('editPost', ['id' => $post->id]) }}">
                                         <i class="fa fa-edit fa-font-24" style="color: limegreen;"></i>
                                     </a>
                                 </td>

@@ -113,13 +113,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-5 col-xs-12">
-            <div class="card z-depth-1">
-                <div class="card-body">
-                    <h4 class="card-title fw-3">Iets van een wereldmap?</h4>
-                </div>
-            </div>
-        </div>
     </div>
 
 

@@ -41,11 +41,26 @@ class AdminController extends Controller
         return view('admin.berichten', compact('tijd', 'allPosts', 'channels'));
     }
 
-    public function editPost(Request $request, Post $post)
+
+
+    public function editPost($id, Channel $channels)
     {
-        $post->channel = $request->channel;
+        $tijd = Carbon::today();
+        $channels = Channel::all();
+        $post = Post::find($id);
+
+
+        return view('admin.editBericht', compact('post', 'tijd', 'channels'));
+    }
+
+    public function updatePost(Request $request, $id)
+    {
+
+        $post = Post::find($id);
+        $post->channel_id = $request->channel_id;
         $post->title = $request->title;
         $post->text = $request->text;
+        $post->slug = str_slug($request->title);
 
         $post->save();
 
@@ -61,28 +76,30 @@ class AdminController extends Controller
         return back()->with('flash', 'Bericht is succesvol verwijderd');
     }
 
-    public function makeChannel(Request $request, Channel $channel) {
-        $channel->channel_name = $request->channel_name;
-        $channel->slug = str_slug($request->channel_name);
-        $channel->save();
+    public function makeChannel(Request $request, Channel $channel) { //Request een kanaal en haalt alle kanalen op
+        $channel->channel_name = $request->channel_name; // De invgevulde channel-name wordt opgeslagen
+        $channel->slug = str_slug($request->channel_name); // Hier wordt ook een slug van gemaakt
+        $channel->save(); //Dit wordt opgeslagen
 
-        return back()->with('flash', 'Het kanaal is aangemaakt');
+        return back()->with('flash', 'Het kanaal is aangemaakt'); //Met een flash message met confirmatie
     }
 
     public function showGebruikers() {
-        Carbon::setLocale('nl');
-        $tijd = Carbon::today();
-        $users = User::all();
+        Carbon::setLocale('nl'); // Zet de locale tijd op nederlands met carbon
+        $tijd = Carbon::today(); // Haalt de tijd van je PC op met carbon
+        $users = User::all(); //Haalt alle users omhoog
 
-        return view('admin.gebruikers', compact('tijd', 'users'));
+        return view('admin.gebruikers', compact('tijd', 'users')); //Geeft de vieeuw terug met alle bovenstaande attributen
     }
 
     public function showReplies() {
         Carbon::setLocale('nl');
         $tijd = Carbon::today();
         $replies = Reply::all();
+        $posts = Post::all();
 
-        return view('admin.replies', compact('tijd', 'replies'));
+
+        return view('admin.replies', compact('tijd', 'replies', 'posts'));
     }
 
     public function editGebruikers($id)
@@ -152,6 +169,13 @@ class AdminController extends Controller
         $channel->delete();
 
         return back()->with('flash', 'Kanaal succesvol verwijderd');
+    }
+
+    public function showSettings()
+    {
+
+        $tijd = Carbon::now();
+        return view('admin.settings', compact('tijd'));
     }
 
     /**

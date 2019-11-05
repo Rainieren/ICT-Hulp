@@ -23,7 +23,7 @@ class UsersTableSeeder extends Seeder
             'date_of_birth' => $faker->date(),
             'email' => 'rainier.laan@home.nl',
             'phonenumber' => '0631231763',
-            'password' => bcrypt('US99#FA197y700'),
+            'password' => bcrypt('welkom'),
             'function' => $faker->sentence(4),
             'description' => $faker->text(255),
             'confirmed' => false,
